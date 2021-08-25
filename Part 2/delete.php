@@ -12,7 +12,7 @@ $id = mysqli_real_escape_string($mysqli, strip_tags($_GET['id']));
 $sql = "DELETE FROM Public_Figure WHERE Public_Figure_ID=$id";
 
 if ($mysqli->query($sql) === TRUE) {
-  echo "Record deleted successfully";
+  header("location: indexlogin.php");
 } else {
   echo "Error deleting record: " . $mysqli->error;
 }
