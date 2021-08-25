@@ -5,7 +5,7 @@ include_once("config.php");
 include("search.php");
 //fetching data in descending order (lastest entry first)
 //$result = mysql_query("SELECT * FROM users ORDER BY id DESC"); // mysql_query is deprecated
-$result = mysqli_query($mysqli, "SELECT * FROM Media_Appearance ORDER BY Public_Fig DESC"); // using mysqli_query instead
+$result = mysqli_query($mysqli, "SELECT * FROM Media_Appearance ORDER BY Media_Appearance_ID DESC"); // using mysqli_query instead
 ?>
 
 <html>
